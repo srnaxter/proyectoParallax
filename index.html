@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+    <title>Proyecto Parallax</title>
+
+    <script>
+        $('.parallax-window').parallax({imageSrc: 'http://dis-rupt.tv/wp-content/uploads/2017/11/gaming-20170210-RainbowSix.jpg'});
+        $('.parallax-window').parallax({
+            naturalWidth: 600,
+            naturalHeight: 400
+        });
+        jQuery(window).trigger('resize').trigger('scroll');
+    </script>
+
+    <style>
+        .parallax-window {
+            min-height: 400px;
+            background: transparent;
+        }
+    </style>
+</head>
+<body style="background-color:rgba(23,23,23,0.85);">
+<div class="parallax-window" data-parallax="scroll" data-image-src="http://dis-rupt.tv/wp-content/uploads/2017/11/gaming-20170210-RainbowSix.jpg"></div>
+<div class="parallax-window">
+    <div class="parallax-slider">
+        <span style="position:absolute; top: 408px; color: white"><h1>Mi efecto Parallax</h1></span>
+        <p style="position:absolute; top: 499px; color: white">Tom Clancy's Rainbow Six: Siege es un videojuego de acción militar táctica en primera persona desarrollado
+            por Ubisoft Montreal y distribuido por Ubisoft para las plataformas PlayStation 4, Xbox One y Microsoft
+            Windows. El juego fue confirmado en la conferencia de E3 en junio de 20141​ y, tras ser retrasado, su fecha
+            de lanzamiento fue el 1 de diciembre de 2015. Durante el E3 2014 la demostración del juego fue presentada,
+            recibiendo comentarios muy positivos. En el E3 del 2015, se mostró un "gameplay" del videojuego en la
+            consola Xbox One. El juego consiste en partidas de equipos de cinco atacantes contra cinco defensores.
+            Los defensores deben defender un objetivo dentro de una estructura, ya sea un rehén, dos bombas o un
+            contenedor biológico. Si logran defender al objetivo con éxito o eliminan a todos los atacantes, ganan
+            la ronda. Los atacantes deben rescatar, desactivar, o asegurar al objetivo (respectivamente), o eliminar
+            a los defensores para ganar. El juego cuenta con una amplia variedad de personajes elegibles, llamados
+            operadores. Cada operador posee armas exclusivas y una habilidad única que puede utilizar durante los
+            combates, como también estadísticas que determinan su nivel de blindaje y velocidad.</p>
+    </div>
+</div>
+<div class="parallax-window" data-parallax="scroll" data-image-src="http://www.fsgamer.com/wp-content/uploads/sites/2/
+2015/10/tom_clancy_s_rainbow_six__siege___the_operators_by_neonkiler99-d8pjvj5-1024x520.jpg"></div>
+</body>
+</html>
